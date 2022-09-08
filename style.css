@@ -1,0 +1,433 @@
+body {
+  scroll-behavior: smooth;
+  background-color: rgb(0, 0, 0);
+}
+
+                /* css for navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 45px;
+  padding-left: 40px;
+  background: rgb(0, 0, 0);
+  align-items: center;
+  align-items: flex;
+  font-size: 25px;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+
+  .end_nav img {
+    margin-top: 22px;
+    margin-left: 20px;
+  }
+}
+
+.navbar img {
+  height: 26px;
+  width: 200px;
+}
+
+.font_nav {
+  color: white;
+}
+.end_nav {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+.end_nav img {
+  margin-bottom: 6px;
+  margin-left: 35px;
+  height: 20px;
+  width: 22px;
+}
+
+                    /*css for top slider*/
+
+
+.top_slider {
+  margin: auto;
+  width: 100%;
+  height: 380px;
+  box-sizing: border-box;
+  position: absolute;
+  background-image: url("https://oasis.opstatics.com/content/dam/oasis/page/2021/9-series/accessory/watch/5120_03.jpg");
+  animation: slider 12s infinite linear;
+  background-size: 100% 100%;
+}
+@keyframes slider {
+  10% {
+    background-image: url("https://oasis.opstatics.com/content/dam/oasis/page/2021/9-series/accessory/watch/5120_03.jpg");
+  }
+  40% {
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/smart-watch-f3321.appspot.com/o/My%20project1.png?alt=media&token=f3c4d567-0643-4f00-880e-727a8915fbec");
+  }
+  60% {
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/smart-watch-f3321.appspot.com/o/final.png?alt=media&token=4ec8b03d-b1a0-4ab4-9bf7-05a5d6f9f108");
+  }
+}
+
+@media (max-width:800px){
+  .top_slider {
+    inline-size: 100%;
+    width: 100%;
+    height: 18vh;
+    
+  }
+}
+
+
+          
+             /* Css for 2nd navbar*/
+
+
+nav {
+  color: #ebebd3;
+  position: relative;
+
+}
+
+.site-nav {
+  position: absolute;
+  top: 0%;
+  right: 0;
+  background: #464655;
+  height: 0px;
+  overflow: hidden;
+}
+
+.site-nav--open {
+  height: auto;
+}
+
+.site-nav li {
+  border-bottom: 1px solid #575766;
+}
+
+.site-nav li:last-child {
+  border-bottom: none;
+}
+
+.site-nav a {
+  color: #f7bd00;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  padding: 2em 6em 2em 2em;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  background: #aaa;
+  color: #d80c0c;
+}
+
+.menu-toggle {
+  padding: 1em;
+  position: absolute;
+  top: 0.5em;
+  right: 1em;
+  cursor: pointer;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  display: block;
+  background: #ebebd3;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  transition: all ease-in-out 500ms;
+}
+
+.hamburger::before {
+  transform: translatey(-7px);
+}
+
+.hamburger::after {
+  transform: translatey(4px);
+}
+
+.open .hamburger {
+  transform: rotate(45deg);
+}
+
+.open .hamburger::before {
+  opacity: 0;
+}
+
+.open .hamburger::after {
+  transform: translatey(-3px) rotate(-90deg);
+}
+
+@media (min-width: 1300px) {
+  nav {
+    display: flex;
+    color: #ebebd3;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .site-nav {
+    height: auto;
+    position: fixed;
+    background-color:black;
+    padding-top:15px;
+    padding-right:5vh ;
+    padding-left: 5px;
+    padding-bottom:7px;
+    margin-right: 35vh;
+   
+  }
+
+  .site-nav li {
+    display: inline-block;
+    border: none;
+  }
+
+  .site-nav a {
+    padding: 0;
+    margin-left: 3em;
+  }
+
+  .site-nav a:hover,
+  .site-nav a:focus {
+    background: transparent;
+  }
+}
+
+
+
+
+
+                    /*CSS for Main Card*/
+.heading_text {
+  color:#aaa;
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 65vh;
+  margin-bottom: 50px;
+}
+
+
+
+.checked {
+  color: rgb(161, 10, 10);
+  font-size: 12px;
+  
+}
+
+.item_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
+  row-gap: 40px;
+  margin: auto;
+}
+
+.text_box {
+  max-width: 300px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: rgb(247, 236, 236);
+}
+
+@media(max-width:800px){
+  .heading_text{
+    margin-top: 150px;
+    margin-bottom: 30px;}
+  
+  }
+
+.text_box > div {
+  margin-left: 10px;
+}
+.inner_item_container > div:nth-child(1) {
+  background-color:#aaa;
+  font-weight: bolder;
+  border-radius: 10px 10px 0px 0px;
+  max-width: 300px;
+  max-height: 315px;
+}
+.short_des {
+  border-radius: 10px 5px 5px 0px;
+  padding: 12px;
+  display: inline;
+  background-color: rgb(247, 207, 4);
+  color: rgb(182, 20, 20);
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.description {
+  width: 90%;
+}
+.tittle {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 35%;
+}
+
+.price :first-child {
+  color: rgb(171, 15, 15);
+  font-weight: bolder;
+}
+.price :last-child {
+  margin-left: 5px;
+  margin-top: 5px;
+  color: grey;
+  text-decoration: line-through;
+  font-size: 13px;
+}
+
+.btn_add_cart {
+  color: #f1f1f1;
+  background-color: black;
+  padding: 5px 5px;
+  border-radius: 50px;
+  width: 100px;
+  margin-left: 25px;
+  margin-bottom: 10px;
+  font-size: 15px;
+ 
+
+}
+.btn_add_cart:hover {
+  box-shadow: 0 0 1px 0 #212015 inset, 0 0 1px 0px #496966;
+  border: 2px solid #677372;
+}
+
+
+.image_box img{
+  width: 100%;
+  height: auto;  
+  margin-top: 10vh;
+}
+
+@media(max-width:800px){
+  .image_box img{
+    width: 117vh;
+    height:31vh; 
+    margin-top: 5vh; 
+  }
+  }
+
+
+
+  h1 {
+    margin: 10px;
+    padding: 8px 48px;
+    
+    color: #aaa;
+    font-size: 30px;
+  }
+  .main-section {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    flex-wrap: wrap;
+    flex: 1;
+    --cardWidth: 180px;
+    --cardHeight: 180px;
+    --cardMargin: 10px;
+    
+  }
+  .card {
+    width: var(--cardWidth);
+    height: var(--cardHeight);
+    margin: var(--cardMargin);
+    border: 1px  #ccc;
+    border-radius: 20px;
+    color: #aaa;
+    background: rgb(16, 7, 7);
+    justify-content:center;
+    align-items: center;  
+}
+
+
+
+    
+  
+  
+  @media(max-width:450px){
+    .main-section {
+      display: flex;
+      justify-content:center;
+      margin-right: 0px;
+      --cardWidth: 140px;
+      --cardHeight: 140px;
+      --cardMargin: 5px;
+    }
+    h1 {
+      padding: 1px 1px;
+      margin: 1px;
+      color: #aaa;
+      font-size: 20px;
+    }
+  }
+
+  h4 {
+    justify-content: center;
+    padding: 10px 10px;
+    margin: 50px;
+    color: #aaa;
+    font-size: 30px;
+
+  }
+
+
+
+
+  .sec {
+    background-color: #1c1c1c;
+  }
+  .imgrow {
+    background-color: #000000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: auto;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+  }
+  .iconrow {
+    display: flex;
+    flex-direction:flex-start;
+   
+    padding: 10px 100px 10px 100px;
+    align-items: center;
+    justify-content: center;
+  }
+  .iconrow p {
+    color: #aaa;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  
+  
+ 
+
+
